@@ -1,0 +1,123 @@
+.education-section {
+    background-color: white;
+}
+
+.edu-header {
+    text-align: center;
+    padding: 40px 0;
+    background: #f9f7f7;
+}
+
+.edu-header h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+.edu-timeline {
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.edu-timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.edu-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.edu-left,
+.edu-right {
+    width: 45%;
+}
+
+.edu-number {
+    font-size: 80px;
+    color: #ddd;
+    font-weight: 600;
+}
+
+.edu-right {
+    background: #f9f7f7;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.edu-icon {
+    background: black;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.edu-right h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.institution {
+    font-weight: 600;
+    margin: 5px 0 10px;
+}
+
+.desc {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.year {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .edu-timeline::before {
+        left: 20px;
+    }
+
+    .edu-item {
+        margin-bottom: 35px;
+    }
+
+    .edu-item:last-child {
+        margin-bottom: 10px;
+    }
+
+    .edu-item.reverse {
+        flex-direction: column;
+    }
+
+    .edu-left,
+    .edu-right {
+        width: 100%;
+    }
+
+    .edu-number {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+}

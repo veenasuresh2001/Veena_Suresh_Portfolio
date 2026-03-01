@@ -1,0 +1,93 @@
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+ height: 100vh;
+   width: 100%;
+  z-index: 1;
+
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  background-color: white;
+}
+
+.right {
+  flex: 1;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)),
+    url('/home.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.center-content h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.center-content p {
+  background: transparent;
+  letter-spacing: 4px;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typing 3s steps(25, end) forwards,
+    blink 0.8s infinite;
+}
+
+.center-content button:hover {
+  background: black;
+  color: white;
+}
+
+.who {
+  border: solid black;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  position: relative;
+  top: -50px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-color: black
+  }
+
+  50% {
+    border-color: transparent
+  }
+
+  100% {
+    border-color: black
+  }
+}

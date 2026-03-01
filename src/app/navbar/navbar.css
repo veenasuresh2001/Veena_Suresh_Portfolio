@@ -1,0 +1,142 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 10px;
+}
+
+.usericon {
+    background-color: rgb(206, 196, 196);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.nav-items p {
+    margin: 0;
+    cursor: pointer;
+}
+
+.nav-items p::after {
+    content: " /";
+    margin-left: 5px;
+}
+
+.nav-items p:last-child::after {
+    content: "";
+}
+
+.nav-items p:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.social svg {
+    transition: 0.3s ease;
+}
+
+.social svg:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        grid-template-columns: 1fr auto;
+        padding: 5px;
+        height: 60px;
+        /* position: relative; */
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        display: none;
+        padding: 20px 0;
+
+        justify-items: center;
+    }
+
+    .nav-items.active {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .nav-items p::after {
+        content: " /";
+        margin-left: 5px;
+    }
+
+    .nav-items p:last-child::after {
+        content: "";
+    }
+
+    .social {
+        position: absolute;
+        top: 140px;
+        /* below nav items */
+        left: 0;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        gap: 20px;
+        background: white;
+        padding-bottom: 20px;
+    }
+
+    .nav-items.active+.social {
+        display: flex;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .hamburger {
+        display: block;
+        justify-self: end;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

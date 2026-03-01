@@ -1,0 +1,38 @@
+.roles {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.role-item {
+  padding: 50px 60px;
+  color: #3b3b3b;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.role-item:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+@media(max-width:768px) {
+  .roles {
+    flex-direction: column;
+  }
+
+  .role-item{
+     padding: 50px 70px;
+  }
+
+  .role-item:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+}

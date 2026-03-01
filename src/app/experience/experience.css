@@ -1,0 +1,121 @@
+.experience-section {
+  background-color: white;
+
+}
+
+.exp-header {
+  text-align: center;
+  padding: 40px 0;
+  background: #f9f7f7;
+}
+
+.exp-header h1 {
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+.exp-timeline {
+  position: relative;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+}
+
+.exp-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.exp-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.exp-left,
+.exp-right {
+  width: 45%;
+}
+
+.exp-number {
+  font-size: 80px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.exp-right {
+ background: #f9f7f7;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.exp-icon {
+  background: black;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.exp-right h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.company {
+  font-weight: 600;
+  margin: 5px 0 10px;
+}
+
+.desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.year {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .exp-timeline::before {
+    left: 20px;
+  }
+
+  .exp-item {
+    flex-direction: column;
+  }
+
+  .exp-item.reverse {
+    flex-direction: column;
+  }
+
+  .exp-left,
+  .exp-right {
+    width: 100%;
+  }
+
+  .exp-number {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
