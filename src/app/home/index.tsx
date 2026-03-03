@@ -2,7 +2,7 @@ import './home.css'
 
 export default function Home() {
     return (
-        <div className="home">
+        <div className="home" id='home'>
 
             <div className="left"></div>
             <div className="right"></div>

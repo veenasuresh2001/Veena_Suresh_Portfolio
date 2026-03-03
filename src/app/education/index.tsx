@@ -3,7 +3,7 @@ import "./education.css";
 
 export default function Education() {
   return (
-    <div className="education-section">
+    <div className="education-section" id="education">
 
       {/* Header */}
       <div className="edu-header">

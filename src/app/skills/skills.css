@@ -70,5 +70,13 @@
     .skills-section {
         padding: 40px 20px;
     }
-    
+    .skills-header h1 {
+    font-size: large;
+    letter-spacing: 4px;
+}
+.more-skills h4 {
+    font-size: medium;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
 }

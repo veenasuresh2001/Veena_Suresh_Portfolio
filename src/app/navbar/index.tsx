@@ -17,11 +17,12 @@ export default function Navbar() {
             </div>
 
             <div className={`nav-items ${isOpen ? "active" : ""}`}>
-                <p>Home</p>
-                <p>About</p>
-                <p>Resume</p>
-                <p>Portfolio</p>
-                <p>Contact</p>
+                <p onClick={() => document.getElementById("home")?.scrollIntoView()}>Home</p>
+                <p onClick={() => document.getElementById("about")?.scrollIntoView()}>About</p>
+                <p onClick={() => document.getElementById("experience")?.scrollIntoView()}>Experience</p>
+                <p onClick={() => document.getElementById("education")?.scrollIntoView()}>Education</p>
+                <p onClick={() => document.getElementById("skills")?.scrollIntoView()}>Skills</p>
+                <p onClick={() => document.getElementById("contact")?.scrollIntoView()}>Contact</p>
             </div>
 
             <div className="social">

@@ -95,20 +95,20 @@
 }
 
 @media (max-width: 768px) {
+
     .edu-timeline::before {
         left: 20px;
     }
 
     .edu-item {
-        margin-bottom: 35px;
-    }
-
-    .edu-item:last-child {
-        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
     }
 
     .edu-item.reverse {
         flex-direction: column;
+        /* 🔥 override reverse */
     }
 
     .edu-left,
@@ -120,4 +120,21 @@
         font-size: 40px;
         margin-bottom: 10px;
     }
+
+    .edu-header h1 {
+        font-size: large;
+        letter-spacing: 4px;
+    }
+
+    .edu-right h3 {
+    font-size: medium;
+    letter-spacing: 2px;
+}
+.institution {
+    font-weight: 400;
+    font-size: medium;
+    margin: 5px 0 10px;
+}
+
+
 }
